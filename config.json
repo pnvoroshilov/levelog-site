@@ -1,0 +1,4 @@
+{
+  "version": 1,
+  "paywall": { "mode": "hard", "closeDelaySeconds": 2, "defaultPlan": "annual" }
+}
