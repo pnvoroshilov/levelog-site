@@ -11,6 +11,7 @@
 <meta property="og:title" content="Levelog: GLP-1 Shot Tracker for iPhone">
 <meta property="og:description" content="Log the shot, see the curve, keep it all on your iPhone. A GLP-1 journal with no account and no server.">
 <meta property="og:image" content="img/icon.png">
+<meta name="apple-itunes-app" content="app-id=6814215110">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,6 +104,9 @@
     margin: 22px 0 14px;
   }
   .badge .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--sage); flex: none; }
+  .store { margin: 22px 0 10px; }
+  .store-badge img { display: inline-block; height: 54px; width: auto; }
+  .store-badge:hover img { opacity: .88; }
 
   .contact { font-size: 15px; color: var(--ink-2); margin: 0; }
 
@@ -253,10 +257,9 @@
       <p class="promise">Log the shot, see the curve, keep it all on your iPhone.</p>
       <p class="sub">A journal for Ozempic, Wegovy, Mounjaro, Zepbound, Saxenda, Trulicity, Rybelsus, the oral forms and compounded semaglutide or tirzepatide. Shots, doses, injection sites, weight, side effects, protein and water. No account, no server, nothing to sign up for.</p>
 
-      <!-- Replace this badge with the App Store download badge and link once the app is live. -->
-      <p><span class="badge"><span class="dot" aria-hidden="true"></span>Coming soon to the App Store</span></p>
+      <p class="store"><a class="store-badge" href="https://apps.apple.com/app/id6814215110" aria-label="Download Levelog on the App Store"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="160" height="54"></a></p>
 
-      <p class="contact">Questions, or want in on the beta? Write to <a href="mailto:support@levelog.app">support@levelog.app</a></p>
+      <p class="contact">iPhone, iOS 17 and later. Questions? Write to <a href="mailto:support@levelog.app">support@levelog.app</a></p>
 
       <ul class="chips">
         <li>7 day free trial</li>
@@ -292,7 +295,7 @@
         </figure>
 
         <figure class="shot">
-          <div class="frame"><img src="img/paywall.png" alt="Levelog paywall showing an annual plan with a 7 day free trial and a monthly plan" width="368" height="800"></div>
+          <div class="frame"><img src="img/paywall.png" alt="Levelog Premium screen: your level curve is ready, 7 day free trial then $49.99 a year, plan cards below" width="368" height="800"></div>
           <figcaption><b>Premium, stated plainly</b>The plan and the price sit on the button, and a reminder lands 24 hours before the trial ends.</figcaption>
         </figure>
 
@@ -387,7 +390,7 @@
       <div class="section-head">
         <p class="eyebrow">Pricing</p>
         <h2>Pick a plan. Start with 7 free days.</h2>
-        <p>Prices are in US dollars and are charged by the App Store, so your local store shows the equivalent in your currency. Family Sharing is on.</p>
+        <p>Prices are in US dollars and are charged by the App Store, so your local store shows the equivalent in your currency.</p>
       </div>
 
       <div class="plans">
