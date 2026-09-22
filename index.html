@@ -85,6 +85,7 @@
   .topbar .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; flex-wrap: wrap; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
   .brand img { width: 30px; height: 30px; border-radius: 8px; }
+  .brand img.wordmark { width: auto; height: 22px; border-radius: 0; }
   .topbar nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
   .topbar nav a { text-decoration: none; color: var(--ink-2); font-weight: 550; }
   .topbar nav a:hover { color: var(--teal); }
@@ -237,7 +238,7 @@
 
 <header class="topbar">
   <div class="wrap">
-    <span class="brand"><img src="img/icon.png" alt="Levelog app icon" width="30" height="30">Levelog</span>
+    <span class="brand"><img src="img/icon.png" alt="" width="30" height="30"><img class="wordmark" src="img/wordmark.png" alt="Levelog" height="22"></span>
     <nav>
       <a href="#why">Why</a>
       <a href="#features">Features</a>
@@ -251,7 +252,7 @@
 
   <section class="hero">
     <div class="wrap">
-      <img class="hero-icon" src="img/icon.png" alt="Levelog app icon: a white medication level curve on deep teal" width="84" height="84">
+      <img class="hero-icon" src="img/icon.png" alt="Levelog app icon: a teal L turning into a medication level curve" width="84" height="84">
       <p class="eyebrow">GLP-1 shot tracker for iPhone</p>
       <h1>Levelog</h1>
       <p class="promise">Log the shot, see the curve, keep it all on your iPhone.</p>
