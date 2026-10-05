@@ -20,7 +20,7 @@
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "Levelog",
-  "description": "A GLP-1 shot journal for iPhone. Log shots, doses, injection sites, weight and side effects, get reminders, and see an estimated medication level curve. Everything stays on your iPhone.",
+  "description": "A GLP-1 shot journal for iPhone. Log shots, doses, injection sites, weight and side effects, get reminders, and see an estimated medication level curve. No account; the journal stays on your iPhone.",
   "operatingSystem": "iOS",
   "applicationCategory": "HealthApplication",
   "url": "https://levelog.app/",
@@ -238,11 +238,13 @@
     .why li:first-child { grid-column: 1 / -1; }
     .tiers { grid-template-columns: 1fr 1fr; }
     .plans { grid-template-columns: repeat(4, 1fr); }
-    .rail { justify-content: center; }
+    .rail > :first-child { margin-left: auto; }
+    .rail > :last-child { margin-right: auto; }
   }
 
   @media (min-width: 1140px) {
-    .rail { overflow-x: visible; margin-inline: 0; padding-inline: 0; }
+    .rail { overflow-x: visible; margin-inline: 0; padding-inline: 0; justify-content: center; }
+    .rail > :first-child, .rail > :last-child { margin-inline: 0; }
     .shot { width: 198px; }
   }
 
@@ -491,8 +493,8 @@
   <div class="wrap">
     <span class="brand"><img src="img/icon.png" alt="" width="30" height="30" aria-hidden="true">Levelog</span>
     <span class="links">
-      <a href="privacy.html">Privacy policy</a>
-      <a href="terms.html">Terms of use</a>
+      <a href="/privacy">Privacy policy</a>
+      <a href="/terms">Terms of use</a>
       <a href="mailto:support@levelog.app">support@levelog.app</a>
     </span>
     <p class="fine">Levelog is a journal, not medical advice. Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound, Trulicity, Saxenda and Victoza are trademarks of their respective owners. Levelog is not affiliated with, endorsed by or sponsored by any of them.</p>
